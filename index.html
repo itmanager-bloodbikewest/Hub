@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BloodBikeWest Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="env-banner" class="env-banner" hidden>
+  <span>DEV ENVIRONMENT</span>
+</div>
+
+<div class="route-line" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">BloodBikeWest</p>
+    <h1>The Hub</h1>
+    <p class="tagline">One stop for the road. Pick a system to continue.</p>
+  </div>
+</header>
+
+<main class="cards">
+  <a class="card" id="card-rota" href="#" data-app="rota">
+    <div class="card-top">
+      <span class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="21" stroke="currentColor" stroke-width="2"/>
+          <path d="M24 13v11l7 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="live-dot" aria-hidden="true"></span>
+    </div>
+    <h2>Rota</h2>
+    <p>See who's riding, and when you're next up.</p>
+    <span class="card-cta">Open Rota <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+
+  <a class="card" id="card-control" href="#" data-app="control">
+    <div class="card-top">
+      <span class="card-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="7" y="10" width="34" height="22" rx="2" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 39h16M24 32v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="16" cy="21" r="1.6" fill="currentColor"/>
+          <circle cx="24" cy="21" r="1.6" fill="currentColor"/>
+          <circle cx="32" cy="21" r="1.6" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="live-dot" aria-hidden="true"></span>
+    </div>
+    <h2>Control Center</h2>
+    <p>Dispatch, track runs, and manage jobs in progress.</p>
+    <span class="card-cta">Open Control Center <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+</main>
+
+<footer class="site-footer">
+  <p>BloodBikeWest &mdash; volunteer riders, carrying what matters.</p>
+</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
