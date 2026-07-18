@@ -1,4 +1,4 @@
-# BloodBikeWest Hub
+# BloodBikeWest Hub.
 
 A landing page that links out to the two BloodBikeWest apps:
 
