@@ -116,9 +116,7 @@
           user: {
             name: roleRes.name,
             phone: phone,
-            role: roleRes.role,
-            controllers: roleRes.controllers || [],
-            riders: roleRes.riders || []
+            role: roleRes.role
           },
           savedAt: Date.now()
         };
