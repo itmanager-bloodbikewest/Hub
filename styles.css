@@ -49,8 +49,13 @@ html, body {
 }
 
 /* ---------- Hero ---------- */
-.hero {
+#app-content {
+  position: relative;
   background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+  min-height: 100vh;
+}
+.hero {
+  position: relative;
   color: #fff;
   padding: 4.5rem 1.5rem 5rem;
   text-align: center;
@@ -162,21 +167,65 @@ html, body {
 .site-footer {
   text-align: center;
   padding: 2rem 1.5rem 3rem;
-  color: var(--slate);
+  color: #8A97AE;
   font-size: 0.85rem;
+  position: relative;
+}
+
+/* ---------- Signature: gable + door (App Depo) ---------- */
+.depot-graphic {
+  position: absolute;
+  left: 50%;
+  top: 32px;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+.depot-gable {
+  flex: 0 0 auto;
+  width: 100%;
+  aspect-ratio: 1 / 0.15; /* 30% pitch: rise = 0.3 * half-width */
+  background: #1a1a1a;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.3);
+}
+.depot-door {
+  flex: 1 1 auto;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  background-image: url('door-texture.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.5);
+}
+.depot-graphic--login {
+  width: min(420px, 88vw);
+  height: 60vh;
+  max-height: 460px;
+}
+.depot-graphic--app {
+  width: min(640px, 88vw);
+  height: 75vh;
+  max-height: 640px;
 }
 
 /* ---------- Login screen ---------- */
 [hidden] { display: none !important; }
 .login-screen {
+  position: relative;
   min-height: calc(100vh - 3px);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 1.5rem;
   background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+  overflow: hidden;
 }
 .login-card {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 380px;
   background: #fff;
